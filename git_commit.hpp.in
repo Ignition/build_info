@@ -1,0 +1,4 @@
+#pragma once
+namespace build_info{
+    const char git_commit[] __attribute__((section(".build_info"), used)) = "GIT_COMMIT_HASH: @GIT_COMMIT_HASH@";
+}
